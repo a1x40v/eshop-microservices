@@ -3,7 +3,7 @@ using Catalog.API.Models;
 
 namespace Catalog.API.Products.CreateProduct;
 
-public record CreateProductCommand(string Name, List<string> Category, string Description, decimal Price, string ImageUrl)
+public record CreateProductCommand(string Name, List<string> Category, string Description, decimal Price, string ImageFile)
     : ICommand<CreateProductdResult>;
 
 public record CreateProductdResult(Guid Id);
@@ -18,7 +18,7 @@ internal class CreateProductCommandHandler
             Name = command.Name,
             Category = command.Category,
             Description = command.Description,
-            ImageFile = command.ImageUrl,
+            ImageFile = command.ImageFile,
             Price = command.Price
         };
 
