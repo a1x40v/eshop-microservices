@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B5B7BA87-4C7C-4DD7-8424-06E3E2BC3C1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{ECB8D932-34C8-463D-BE18-A362C265245C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{B10C228A-F2F2-46C3-92AA-7FF9FCF14561}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{C6AAD421-82F6-43D6-AC71-994104B6C974}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{58C22A5F-0683-4E25-A27F-4EABFE363047}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +20,20 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B10C228A-F2F2-46C3-92AA-7FF9FCF14561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10C228A-F2F2-46C3-92AA-7FF9FCF14561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10C228A-F2F2-46C3-92AA-7FF9FCF14561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10C228A-F2F2-46C3-92AA-7FF9FCF14561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C22A5F-0683-4E25-A27F-4EABFE363047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C22A5F-0683-4E25-A27F-4EABFE363047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C22A5F-0683-4E25-A27F-4EABFE363047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C22A5F-0683-4E25-A27F-4EABFE363047}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECB8D932-34C8-463D-BE18-A362C265245C} = {B5B7BA87-4C7C-4DD7-8424-06E3E2BC3C1B}
+		{B10C228A-F2F2-46C3-92AA-7FF9FCF14561} = {ECB8D932-34C8-463D-BE18-A362C265245C}
+		{58C22A5F-0683-4E25-A27F-4EABFE363047} = {C6AAD421-82F6-43D6-AC71-994104B6C974}
 	EndGlobalSection
 EndGlobal
